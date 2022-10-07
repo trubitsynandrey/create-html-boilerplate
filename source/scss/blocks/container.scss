@@ -1,15 +1,15 @@
 .container {
   margin: 0 auto;
-  width: $sm;
+  max-width: $sm;
   padding: 0 20px;
 
   @media screen and (min-width: $md) {
-    width: $md;
+    max-width: $md;
     padding: 0 40px;
   }
 
   @media screen and (min-width: $xl) {
-    width: $xl;
-    padding: 0 50px;
+    max-width: $xl;
+    padding: 0 95px;
   }
 }

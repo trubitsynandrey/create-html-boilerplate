@@ -1,6 +1,7 @@
 .pluses {
   display: grid;
   grid-template-columns: 426px 1fr;
+  grid-column-gap: 40px;
   margin-bottom: 120px;
 }
 
@@ -20,5 +21,5 @@
 }
 
 .pluses_revert {
-  grid-template-columns: 426px 1fr;
+  grid-template-columns: 1fr 426px;
 }

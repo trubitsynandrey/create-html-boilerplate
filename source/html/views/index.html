@@ -25,10 +25,7 @@
     htmlWebpackPlugin.options.custom.version,}) %>
     <main>
       <!--index/hero.html-->
-      <%= _.template(require('../includes/index/hero.html').default)({}) %>
-      <!--index/structure.html-->
-      <%= _.template(require('../includes/index/structure.html').default)({}) %>
-      <%=
+      <%= _.template(require('../includes/index/hero.html').default)({}) %> <%=
       _.template(require('../includes/index/pluses/productivity.html').default)({})
       %> <%=
       _.template(require('../includes/index/pluses/output.html').default)({}) %>
