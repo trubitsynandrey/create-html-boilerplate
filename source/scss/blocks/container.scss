@@ -3,13 +3,13 @@
   // max-width: $sm;
   padding: 0 20px;
 
-  // @media screen and (min-width: $md) {
-  //   max-width: $md;
-  //   padding: 0 40px;
-  // }
+  @media screen and (min-width: $md) {
+    max-width: $md;
+    padding: 0 40px;
+  }
 
-  // @media screen and (min-width: $xl) {
-  //   max-width: $xl;
-  //   padding: 0 95px;
-  // }
+  @media screen and (min-width: $xl) {
+    max-width: $xl;
+    padding: 0 95px;
+  }
 }
