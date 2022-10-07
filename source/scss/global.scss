@@ -6,6 +6,8 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -28,8 +30,21 @@ a {
 }
 
 h1 {
-  font-size: 24px;
-  line-height: 1.25;
+  font-size: 55px;
+  line-height: 82px;
+}
+
+h2 {
+  font-size: 55px;
+  line-height: 82px; 
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 32px;  
+  color: #575455;
 }
 
 pre {
