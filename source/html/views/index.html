@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="description" content="HTML5 webpack boilerplate" />
-  <title>HTML5 webpack boilerplate</title>
-  <link rel="stylesheet" href="/vendors/normalize-css/normalize.min.css" />
-  <script>
-    if (!window.HTMLPictureElement) {
-      document.createElement('picture');
-    }
-  </script>
-</head>
-<body>
-<!--header.html-->
-<%= _.template(require('../includes/common/header.html').default)({version: htmlWebpackPlugin.options.custom.version,}) %>
-<main>
-  <!--index/hero.html-->
-  <%= _.template(require('../includes/index/hero.html').default)({}) %>
-  <!--index/structure.html-->
-  <%= _.template(require('../includes/index/structure.html').default)({}) %>
-</main>
-<!--footer.html-->
-<%= _.template(require('../includes/common/footer.html').default)({}) %>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="HTML5 webpack boilerplate" />
+    <title>HTML5 webpack boilerplate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/vendors/normalize-css/normalize.min.css" />
+    <script>
+      if (!window.HTMLPictureElement) {
+        document.createElement('picture');
+      }
+    </script>
+  </head>
+  <body>
+    <!--header.html-->
+    <%= _.template(require('../includes/common/header.html').default)({version:
+    htmlWebpackPlugin.options.custom.version,}) %>
+    <main>
+      <!--index/hero.html-->
+      <%= _.template(require('../includes/index/hero.html').default)({}) %>
+      <!--index/structure.html-->
+      <%= _.template(require('../includes/index/structure.html').default)({}) %>
+      <%=
+      _.template(require('../includes/index/pluses/productivity.html').default)({})
+      %> <%=
+      _.template(require('../includes/index/pluses/output.html').default)({}) %>
+    </main>
+    <!--footer.html-->
+    <%= _.template(require('../includes/common/footer.html').default)({}) %>
+  </body>
 </html>

@@ -1,0 +1,24 @@
+.pluses {
+  display: grid;
+  grid-template-columns: 426px 1fr;
+  margin-bottom: 120px;
+}
+
+.pluses__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pluses__title {
+  margin-bottom: 30px;
+}
+
+.pluses__description {
+  margin-bottom: 45px;
+}
+
+.pluses_revert {
+  grid-template-columns: 426px 1fr;
+}
